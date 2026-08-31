@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>D133 Talent & Development Strategy - Interactive</title>
+<style>
+:root{--ink:#15362b;--muted:#66756e;--line:#d7e3de;--soft:#f5f8f7;--mint:#e7f3ed;--green:#006241;--green2:#0b7a54;--white:#fff;--amber:#9b6d22;--amberbg:#fbf5e9;--blue:#2b6676;--bluebg:#edf5f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef3f1;color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.45}.wrap{max-width:1220px;margin:auto;padding:28px 20px 60px}.hero{background:linear-gradient(135deg,#073f2f,#006241 58%,#107654);color:#fff;border-radius:28px;padding:36px;box-shadow:0 18px 50px rgba(0,45,31,.16)}.eyebrow,.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.eyebrow{opacity:.76}.hero h1{font-size:42px;line-height:1.03;margin:8px 0 12px;max-width:860px}.hero p{margin:0;max-width:880px;color:#e9f4ef;font-size:17px}.hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.hero-card{padding:17px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.10);border-radius:16px}.hero-card b{display:block;margin-bottom:6px}.hero-card span{display:block;color:#d8ebe3;font-size:13px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:18px 0 10px}.toolbar-note{font-size:12px;color:var(--muted)}button{font:inherit}.control{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:12px;padding:10px 14px;font-weight:750;cursor:pointer}.control.primary{background:var(--green);border-color:var(--green);color:#fff}.control.active{background:var(--mint);border-color:#95c6b1}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 14px}.tab{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:10px 15px;font-weight:750;cursor:pointer}.tab.active{background:var(--green);color:#fff;border-color:var(--green)}.panel{display:none;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 8px 25px rgba(0,50,35,.045)}.panel.active{display:block}.section-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin-bottom:20px}.section-head h2{font-size:28px;margin:4px 0 0}.section-head p{margin:5px 0 0;color:var(--muted);font-size:14px;max-width:760px}.badge{font-size:11px;font-weight:800;border-radius:999px;padding:6px 9px;white-space:nowrap}.source{background:var(--mint);color:#175b43}.proposed{background:var(--amberbg);color:var(--amber)}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:var(--soft);border:1px solid #e4ebe8;border-radius:16px;padding:17px}.card h3{font-size:16px;margin:7px 0}.card p,.card li{font-size:13px;color:#4f6059}.card ul{padding-left:18px;margin:8px 0 0}.card li{margin:6px 0}.label{color:var(--muted)}.northstar{border-left:5px solid var(--green);background:#f8fbfa;border-radius:14px;padding:18px;font-size:17px;font-weight:780;margin-bottom:16px}.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:10px;margin:18px 0}.flow-box{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center}.flow-box strong{display:block;font-size:18px}.flow-box span{font-size:12px;color:var(--muted)}.arrow{font-size:26px;color:#83a99a}.pillars{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.pillar{min-height:88px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;text-align:left;font-size:12.5px;font-weight:750;cursor:pointer;color:var(--ink)}.pillar.active{background:var(--mint);border-color:#98c8b4;color:#064b35}.detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.detail{background:var(--soft);border-radius:14px;padding:14px;min-height:126px}.detail .value{font-size:13px;margin-top:8px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;margin-top:18px}.table-wrap table{border-collapse:collapse;width:100%;min-width:780px;font-size:13px}.table-wrap th,.table-wrap td{padding:12px;border-bottom:1px solid var(--line);border-right:1px solid var(--line);vertical-align:top}.table-wrap th{background:var(--mint);text-align:left}.table-wrap tr:last-child td{border-bottom:none}.table-wrap th:last-child,.table-wrap td:last-child{border-right:none}.track{background:linear-gradient(180deg,#fbfcfc,#f4f8f6);border:1px solid var(--line);border-radius:18px;padding:20px}.track h3{font-size:21px;margin:3px 0 8px}.track .stage{font-size:12px;color:var(--muted);margin-bottom:12px}.track ul{padding-left:18px;margin:0}.track li{font-size:13px;margin:8px 0}.readiness{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px}.readiness b{font-size:12px}.readiness p{font-size:12px;color:var(--muted);margin:5px 0 0}.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}.compare .side{border-radius:16px;padding:18px}.feedback{background:var(--amberbg);border:1px solid #ead8b9}.coaching{background:var(--bluebg);border:1px solid #cfe1e6}.compare h3{margin:0 0 10px}.compare ul{padding-left:18px;margin:0}.compare li{font-size:13px;margin:7px 0}.standard{margin-top:14px;border:2px solid #a9cdbf;background:#f6fbf9;border-radius:15px;padding:17px}.standard b{color:var(--green)}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.phase{border-left:4px solid var(--green);background:var(--soft);padding:18px;border-radius:12px}.phase h3{margin:0 0 8px}.phase ul{padding-left:18px;margin:0}.phase li{font-size:13px;margin:7px 0}.owner-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.owner{border:1px solid var(--line);border-radius:13px;padding:14px}.owner b{display:block;font-size:13px}.owner span{display:block;font-size:12px;color:var(--muted);margin-top:5px}.scorecards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric{background:var(--soft);border-radius:15px;padding:17px}.metric .num{font-size:29px;font-weight:850;color:var(--green)}.metric b{display:block;font-size:13px}.metric small{display:block;color:var(--muted);margin-top:5px}.status{margin-top:12px;border:1px solid var(--line);border-radius:14px;padding:16px}.status h3{margin:0 0 10px}.status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.status-item{padding:13px;border-radius:12px;background:var(--soft)}.status-item b{font-size:12px}.status-item p{font-size:12px;color:var(--muted);margin:5px 0 0}.questions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.question{background:var(--soft);border-radius:14px;padding:16px;font-size:14px}.quote{background:var(--soft);border-radius:15px;padding:18px;margin:10px 0;font-size:15px;line-height:1.55}.decision{border:2px solid #a9cdbf;background:#f5fbf8;border-radius:15px;padding:18px;margin-top:14px}.edit-note{display:none;margin:0 0 14px;border:1px dashed #95b8aa;background:#f7fbf9;border-radius:12px;padding:12px;font-size:12px}.editing .edit-note{display:block}.editing [data-editable="true"]{outline:1px dashed #83aa9a;outline-offset:3px;border-radius:3px}.footer-note{text-align:center;color:var(--muted);font-size:12px;margin-top:18px}.hidden{display:none!important}button:focus-visible,[contenteditable="true"]:focus{outline:3px solid #8bc8b2;outline-offset:2px}
+@media(max-width:980px){.pillars{grid-template-columns:repeat(4,1fr)}.grid-4,.detail-grid,.scorecards{grid-template-columns:repeat(2,1fr)}.hero-grid,.grid-3,.timeline,.owner-row,.status-grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}.compare,.grid-2,.questions{grid-template-columns:1fr}}
+@media(max-width:620px){.wrap{padding:16px 12px 38px}.hero{padding:24px 20px;border-radius:20px}.hero h1{font-size:34px}.hero-grid,.grid-4,.detail-grid,.scorecards,.pillars{grid-template-columns:1fr}.panel{padding:20px}.section-head{align-items:flex-start;flex-direction:column}.section-head h2{font-size:24px}}
+@media print{body{background:#fff}.wrap{max-width:none;padding:0}.hero,.panel{box-shadow:none}.toolbar,.tabs,.footer-note{display:none}.panel{display:block!important;border:none;padding:18px 0;page-break-after:always}.panel:last-of-type{page-break-after:auto}.hero{border-radius:0;box-shadow:none}.editing [data-editable="true"]{outline:none}.edit-note{display:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+<section class="hero">
+<div class="eyebrow">District 133 | Talent & Development Strategy</div>
+<h1 data-editable="true">Build the bench before we need it.</h1>
+<p data-editable="true">A district operating system for consistent development, stronger internal pipelines and visible leadership readiness across every coffeehouse.</p>
+<div class="hero-grid">
+<div class="hero-card"><b>Strategic problem</b><span data-editable="true">D133 has talent. The opportunity is consistency: identifying it earlier, developing it deliberately and following through.</span></div>
+<div class="hero-card"><b>Priority pipeline</b><span data-editable="true">BAR -> SSV -> ASM, supported by strong SSV leadership development.</span></div>
+<div class="hero-card"><b>North-star outcome</b><span data-editable="true">Every coffeehouse can name emerging talent, readiness level and the next development action.</span></div>
+</div>
+</section>
+
+<div class="toolbar">
+<div class="toolbar-note">Source-backed strategy + clearly labelled proposed operating details.</div>
+<div><button class="control" id="editBtn">Edit text</button> <button class="control primary" id="saveBtn">Save edited copy</button></div>
+</div>
+<div class="edit-note">Edit mode is on. Click any outlined text to change it. Navigation and layout stay locked. Use "Save edited copy" when finished.</div>
+
+<nav class="tabs" aria-label="Strategy sections">
+<button class="tab active" data-panel="overview">Executive overview</button>
+<button class="tab" data-panel="system">Operating system</button>
+<button class="tab" data-panel="tracks">Development tracks</button>
+<button class="tab" data-panel="coaching">Coaching standard</button>
+<button class="tab" data-panel="launch">90-day launch</button>
+<button class="tab" data-panel="scorecard">Scorecard</button>
+<button class="tab" data-panel="decisions">Decisions</button>
+<button class="tab" data-panel="talktrack">Ashley talk track</button>
+</nav>
+
+<section class="panel active" id="overview">
+<div class="section-head"><div><div class="label">Strategy on one page</div><h2 data-editable="true">From good individual development to a consistent district system</h2><p data-editable="true">The working draft identifies consistency - not lack of talent - as the central gap. This version makes the operating logic explicit without changing that strategic direction.</p></div><span class="badge source">Source-backed</span></div>
+<div class="northstar" data-editable="true">District 133 develops partners with a growth mindset who deliver high performance, live the Starbucks Mission, and actively build the next generation of leaders.</div>
+<div class="flow">
+<div class="flow-box"><strong>Identify</strong><span data-editable="true">Spot potential earlier through daily observation, coaching and monthly development conversations.</span></div><div class="arrow">→</div>
+<div class="flow-box"><strong>Develop</strong><span data-editable="true">Use PDPs, stretch experiences, training, mentoring and cross-store exposure.</span></div><div class="arrow">→</div>
+<div class="flow-box"><strong>Validate</strong><span data-editable="true">Review readiness, recognise progress, close gaps and keep district talent visible.</span></div>
+</div>
+<div class="grid-3">
+<div class="card"><div class="label">Partner experience</div><h3 data-editable="true">Welcomed, valued, engaged, productive</h3><p data-editable="true">Development starts on day one. Onboarding, personalised messaging and quality training should help partners understand expectations and see a path to growth.</p></div>
+<div class="card"><div class="label">Leader behaviour</div><h3 data-editable="true">Coaching is daily work</h3><p data-editable="true">Development should not depend on formal conversations alone. Leaders coach in the moment, follow up, validate and recognise progress.</p></div>
+<div class="card"><div class="label">District mindset</div><h3 data-editable="true">Talent is shared talent</h3><p data-editable="true">Stores should not operate in isolation. Cross-store opportunities can strengthen individual growth and the district bench when used intentionally.</p></div>
+</div>
+</section>
+
+<section class="panel" id="system">
+<div class="section-head"><div><div class="label">The D133 talent engine</div><h2>Seven pillars, one operating rhythm</h2><p>Click a pillar to see the district intent, mechanism, leader action and evidence of execution.</p></div><span class="badge source">Pillars from draft</span></div>
+<div class="pillars">
+<button class="pillar" data-key="growth">Growth mindset culture</button>
+<button class="pillar" data-key="cadence">Consistent development cadence</button>
+<button class="pillar active" data-key="pipeline">BAR -> SSV -> ASM pipeline</button>
+<button class="pillar" data-key="coaching">Culture of coaching</button>
+<button class="pillar" data-key="ssv">SSV leadership development</button>
+<button class="pillar" data-key="training">Training excellence & standards</button>
+<button class="pillar" data-key="visibility">District talent visibility</button>
+</div>
+<div class="detail-grid">
+<div class="detail"><div class="label">District intent</div><div class="value" id="intent"></div></div>
+<div class="detail"><div class="label">How it works</div><div class="value" id="mechanism"></div></div>
+<div class="detail"><div class="label">Leader action</div><div class="value" id="action"></div></div>
+<div class="detail"><div class="label">Evidence</div><div class="value" id="evidence"></div></div>
+</div>
+<div class="table-wrap"><table><thead><tr><th>Cadence</th><th>Core district activity</th><th>Pipeline action</th><th>Leader follow-through</th><th>Visibility</th></tr></thead><tbody>
+<tr><td><b>Weekly</b></td><td data-editable="true">In-the-moment coaching, standards reinforcement, skill checks and recognition.</td><td data-editable="true">Notice initiative, influence, coachability and next-level behaviours.</td><td data-editable="true">Give clear expectations and validate learning on the floor.</td><td data-editable="true">Recognise progress and flag emerging talent.</td></tr>
+<tr><td><b>Monthly</b></td><td data-editable="true">Development conversations and PDP follow-up.</td><td data-editable="true">Name active BAR -> SSV and SSV -> ASM candidates.</td><td data-editable="true">Assign the next stretch experience, skill or coaching focus.</td><td data-editable="true">Update a simple store talent snapshot.</td></tr>
+<tr><td><b>Quarterly</b></td><td data-editable="true">Store/district talent discussions focused on readiness and bench gaps.</td><td data-editable="true">Calibrate ready-now, ready-next and emerging talent.</td><td data-editable="true">Close stalled development loops and reset priorities.</td><td data-editable="true">Identify cross-store development or placement opportunities.</td></tr>
+<tr><td><b>Ongoing</b></td><td data-editable="true">Onboarding quality, training completion discipline and standards.</td><td data-editable="true">Maintain exposure to leadership work before openings occur.</td><td data-editable="true">Use observation, exit themes and follow-up to target development energy.</td><td data-editable="true">Keep DM visibility to talent and retention themes.</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="panel" id="tracks">
+<div class="section-head"><div><div class="label">Leadership development focus</div><h2 data-editable="true">Two simple, visible development tracks</h2><p data-editable="true">The draft calls for structured, repeatable and visible development - not complex programmes. The detail below translates the source behaviours into a practical first version.</p></div><span class="badge source">Source + structured detail</span></div>
+<div class="grid-2">
+<div class="track"><div class="label">Track 1</div><h3>BAR -> SSV Development Series</h3><div class="stage">Build confidence in shift-support behaviours before promotion.</div><ul>
+<li data-editable="true"><b>Identify:</b> initiative, team influence, customer focus and coachability.</li>
+<li data-editable="true"><b>Expose:</b> training, standards, deployment awareness and leadership communication.</li>
+<li data-editable="true"><b>Practise:</b> trainer work, shift support, improvement ideas and role-model behaviour.</li>
+<li data-editable="true"><b>Coach:</b> judgement, communication, standards ownership and confidence supporting the team.</li>
+<li data-editable="true"><b>Validate:</b> readiness through observed behaviours, not aspiration alone.</li>
+</ul><div class="readiness"><b>Suggested readiness evidence</b><p data-editable="true">Can support a shift leader, reinforce standards appropriately, communicate clearly with partners and customers, and follow through on an assigned leadership responsibility.</p></div></div>
+<div class="track"><div class="label">Track 2</div><h3>SSV -> ASM Development Series</h3><div class="stage">Develop beyond shift execution into people leadership and strategic ownership.</div><ul>
+<li data-editable="true"><b>Develop:</b> coaching, delegation, resilience and business thinking.</li>
+<li data-editable="true"><b>Expose:</b> staffing, planning, follow-up and partner development.</li>
+<li data-editable="true"><b>Practise:</b> store meetings, planning work, mentoring and cross-store exposure.</li>
+<li data-editable="true"><b>Own:</b> a defined store opportunity with measurable follow-through.</li>
+<li data-editable="true"><b>Validate:</b> ability to lead through others, not simply execute personally.</li>
+</ul><div class="readiness"><b>Suggested readiness evidence</b><p data-editable="true">Can coach and delegate consistently, translate priorities into partner action, use basic business information to make decisions, and follow an initiative from planning through validation.</p></div></div>
+</div>
+<div class="callout" style="margin-top:14px"><b>Development design principle:</b> promotion should be the result of demonstrated readiness. The series creates experiences that let partners practise next-level behaviours before a role becomes available.</div>
+</section>
+
+<section class="panel" id="coaching">
+<div class="section-head"><div><div class="label">Building a culture of coaching</div><h2 data-editable="true">Separate feedback from development</h2><p data-editable="true">The draft specifically calls for leaders to understand the difference so coaching becomes more effective and consistent.</p></div><span class="badge source">Source-backed</span></div>
+<div class="compare">
+<div class="side feedback"><h3>Feedback</h3><ul><li data-editable="true">Often reactive.</li><li data-editable="true">Clarifies what happened.</li><li data-editable="true">Corrects or reinforces a specific behaviour.</li><li data-editable="true">Can be short and immediate.</li></ul></div>
+<div class="side coaching"><h3>Coaching</h3><ul><li data-editable="true">Future-focused and developmental.</li><li data-editable="true">Builds capability over time.</li><li data-editable="true">Uses questions, follow-up and reflection.</li><li data-editable="true">Builds confidence and judgement.</li></ul></div>
+</div>
+<div class="standard"><div class="label">D133 coaching standard</div><p data-editable="true"><b>Clear. Concise. Consistent. Supportive.</b> Set the expectation, help the partner understand the why, follow up to validate, and recognise progress.</p></div>
+<div class="grid-4" style="margin-top:14px">
+<div class="card"><div class="label">1. Clarify</div><p data-editable="true">What behaviour or capability are we developing, and why does it matter?</p></div>
+<div class="card"><div class="label">2. Explore</div><p data-editable="true">Ask questions that surface judgement, barriers and the partner's own thinking.</p></div>
+<div class="card"><div class="label">3. Commit</div><p data-editable="true">Agree one observable next action or practice opportunity.</p></div>
+<div class="card"><div class="label">4. Validate</div><p data-editable="true">Return to it. Observe the behaviour, recognise progress and adjust the next step.</p></div>
+</div>
+</section>
+
+<section class="panel" id="launch">
+<div class="section-head"><div><div class="label">Proposed operating detail</div><h2>90-day minimum viable launch</h2><p data-editable="true">A first version that is simple enough to execute, visible enough to create accountability and structured enough to learn from.</p></div><span class="badge proposed">Proposed</span></div>
+<div class="timeline">
+<div class="phase"><h3>Days 1-30 | Align</h3><ul><li data-editable="true">Confirm BAR -> SSV -> ASM as the first district pipeline priority.</li><li data-editable="true">Define a small set of observable readiness behaviours for each transition.</li><li data-editable="true">Set the minimum PDP expectation and monthly follow-up rhythm.</li><li data-editable="true">Each coffeehouse identifies active candidates where possible.</li><li data-editable="true">Create a simple district talent snapshot: emerging, ready-next, ready-now.</li></ul></div>
+<div class="phase"><h3>Days 31-60 | Activate</h3><ul><li data-editable="true">Begin monthly development conversations and documented next actions.</li><li data-editable="true">Assign stretch experiences tied to readiness gaps.</li><li data-editable="true">Calibrate leaders on feedback vs developmental coaching.</li><li data-editable="true">Use mentoring, trainer work and selected cross-store exposure.</li><li data-editable="true">Audit onboarding, MyLearning and skill-check follow-through.</li></ul></div>
+<div class="phase"><h3>Days 61-90 | Validate</h3><ul><li data-editable="true">Run the first quarterly talent review.</li><li data-editable="true">Compare pipeline strength and gaps across stores.</li><li data-editable="true">Validate readiness with observed evidence and progress.</li><li data-editable="true">Identify stalled development actions and reset ownership.</li><li data-editable="true">Agree what to scale, simplify or change for the next 90 days.</li></ul></div>
+</div>
+<div class="owner-row">
+<div class="owner"><b>Coffeehouse Leader</b><span data-editable="true">Own store pipeline, partner conversations, PDP follow-up, stretch experiences and validation.</span></div>
+<div class="owner"><b>District / NLL</b><span data-editable="true">Set minimum expectations, calibrate readiness, surface bench gaps and enable cross-store development.</span></div>
+<div class="owner"><b>Partner</b><span data-editable="true">Own development goals, practise agreed behaviours, seek feedback and reflect on progress.</span></div>
+</div>
+<div class="callout"><b>Design principle:</b> do not launch another programme. Launch a repeatable management rhythm that makes existing development work visible and consistent.</div>
+</section>
+
+<section class="panel" id="scorecard">
+<div class="section-head"><div><div class="label">Early success measures</div><h2>Measure both execution and bench strength</h2><p data-editable="true">The source draft names the outcomes. The proposed scorecard separates leading indicators from lagging indicators so the district can see whether the system is being used before promotion results arrive.</p></div><span class="badge source">Source + proposed measures</span></div>
+<div class="scorecards">
+<div class="metric"><div class="num">90%+</div><b data-editable="true">Internal promotion direction</b><small>Source draft: improve toward or beyond company goal.</small></div>
+<div class="metric"><div class="num">Every</div><b data-editable="true">Coffeehouse names active pipeline talent</b><small>Source draft.</small></div>
+<div class="metric"><div class="num">All</div><b data-editable="true">Partners have an active PDP</b><small>Source draft.</small></div>
+<div class="metric"><div class="num">Visible</div><b data-editable="true">Strong benches, weak pipelines, next actions</b><small>Source draft.</small></div>
+</div>
+<div class="grid-2" style="margin-top:14px">
+<div class="card"><div class="label">Leading indicators</div><h3>Are we doing the work?</h3><ul><li data-editable="true">Monthly development conversation completion.</li><li data-editable="true">Active PDPs with a current next action.</li><li data-editable="true">MyLearning completion and onboarding quality.</li><li data-editable="true">Skill-check and coaching follow-through.</li><li data-editable="true">Stretch assignments and cross-store experiences in progress.</li></ul></div>
+<div class="card"><div class="label">Lagging indicators</div><h3>Is the work creating bench?</h3><ul><li data-editable="true">Internal promotion rate.</li><li data-editable="true">Ready-now / ready-next bench by role.</li><li data-editable="true">Stores with persistent pipeline gaps.</li><li data-editable="true">Retention of identified talent.</li><li data-editable="true">Time to fill leadership openings internally.</li></ul></div>
+</div>
+<div class="status"><h3>Suggested quarterly talent snapshot</h3><div class="status-grid"><div class="status-item"><b>Emerging</b><p data-editable="true">Shows potential; focus is exposure, fundamentals and consistent performance.</p></div><div class="status-item"><b>Ready next</b><p data-editable="true">Demonstrates several next-level behaviours; has specific gaps and active stretch work.</p></div><div class="status-item"><b>Ready now</b><p data-editable="true">Consistently demonstrates required behaviours and can be considered when an opportunity exists.</p></div></div></div>
+</section>
+
+<section class="panel" id="decisions">
+<div class="section-head"><div><div class="label">NLL alignment</div><h2 data-editable="true">Decisions that turn the strategy into an operating model</h2><p data-editable="true">These preserve the discussion points in the working draft and make the decisions explicit.</p></div><span class="badge source">From draft</span></div>
+<div class="questions">
+<div class="question" data-editable="true"><b>1.</b> Which strategic pillar creates the biggest district impact if solved first?</div>
+<div class="question" data-editable="true"><b>2.</b> How formal should the BAR -> SSV and SSV -> ASM series be in version one?</div>
+<div class="question" data-editable="true"><b>3.</b> What are the minimum district expectations for PDP use, coaching cadence and talent review participation?</div>
+<div class="question" data-editable="true"><b>4.</b> How should cross-store talent sharing work without disrupting store ownership?</div>
+<div class="question" data-editable="true"><b>5.</b> What outcomes should tell us the strategy is working at six months?</div>
+<div class="question" data-editable="true"><b>6.</b> What outcomes should tell us the strategy is working at one year?</div>
+</div>
+<div class="decision"><div class="label">Suggested decision package</div><p data-editable="true"><b>Align on the pipeline as priority one; approve a simple 90-day pilot; define the minimum PDP/coaching/talent-review standards; and agree on one shared district talent snapshot.</b></p></div>
+</section>
+
+<section class="panel" id="talktrack">
+<div class="section-head"><div><div class="label">Meeting-ready</div><h2>A concise way to pitch it to Ashley</h2></div><span class="badge proposed">Proposed wording</span></div>
+<div class="quote" data-editable="true">“I don't think D133 needs another talent programme. I think we need a talent operating system. The opportunity is to make development consistent enough that every coffeehouse can identify who is growing, what they are growing toward and what experience they need next.”</div>
+<div class="quote" data-editable="true">“I'd centre version one on BAR -> SSV -> ASM. PDPs, coaching, training and cross-store exposure are not separate initiatives - they're the mechanisms that move people through that pipeline.”</div>
+<div class="quote" data-editable="true">“I want us to be able to answer three questions at any time: who is emerging, who is getting ready, and what does each person need next?”</div>
+<div class="quote" data-editable="true">“After 90 days, the first proof is not just promotions. It's whether every leader can see their bench more clearly, whether development actions are actually happening, and whether we know where the district's gaps are.”</div>
+<div class="decision"><div class="label">Close with a decision</div><p data-editable="true"><b>Can we align on BAR -> SSV -> ASM as the first priority and pilot a simple 90-day operating rhythm around PDPs, coaching, readiness and district talent visibility?</b></p></div>
+</section>
+
+<div class="footer-note">D133 Talent & Development Strategy | Interactive working version</div>
+</div>
+<script>
+const pillarData={
+ growth:{intent:'Reinforce that Starbucks is a place to build a career. Leaders actively help partners see potential and believe growth is possible.',mechanism:'Personalised development messaging, active PDPs, recognition and visible examples of internal growth.',action:'Connect current performance to future possibility and make development part of normal partner conversations.',evidence:'Partners understand what they are developing and can describe a credible path for in-role growth or next-level readiness.'},
+ cadence:{intent:'Establish a repeatable rhythm for coaching, PDP follow-up, development conversations and talent reviews.',mechanism:'Weekly coaching, monthly development follow-up, quarterly talent discussions and ongoing quality checks.',action:'Protect the rhythm, document next actions and close the loop instead of letting development conversations stand alone.',evidence:'Development happens consistently across coffeehouses rather than depending on individual leader preference.'},
+ pipeline:{intent:'Identify talent earlier and create structured development paths toward the 90% internal promotion goal.',mechanism:'Visible BAR -> SSV and SSV -> ASM tracks using readiness behaviours, stretch experiences, coaching and validation.',action:'Name active candidates, assign relevant experiences, coach against specific readiness gaps and review progress monthly.',evidence:'Every coffeehouse can name active BAR -> SSV and SSV -> ASM candidates, their readiness and the next development action.'},
+ coaching:{intent:'Build leader capability so coaching is clear, concise, consistent, supportive and followed by validation and recognition.',mechanism:'Teach the difference between feedback and coaching and use questions, reflection and follow-up to build judgement.',action:'Set expectations clearly, ask developmental questions, agree a next action, return to it and recognise progress.',evidence:'Coaching produces observable capability growth over time rather than only correcting isolated behaviours.'},
+ ssv:{intent:'Invest heavily in SSV development as the strongest source of future ASM and Coffeehouse Leader bench.',mechanism:'Develop people leadership, delegation, resilience, business thinking, staffing, planning and partner development.',action:'Give SSVs ownership beyond shift execution through planning work, mentoring, store meetings and cross-store exposure.',evidence:'SSVs demonstrate next-level leadership before openings exist and the district has a clearer ASM feeder bench.'},
+ training:{intent:'Strengthen onboarding, MyLearning completion, skill checks, Starbucks standards and leader engagement in training.',mechanism:'Leader-owned onboarding, quality checks, completion discipline and on-floor validation of learned skills.',action:'Treat training completion as a milestone, not the finish line; observe application and coach gaps.',evidence:'Onboarding execution, learning completion and skill-check follow-through improve consistently across stores.'},
+ visibility:{intent:'Make future leaders visible across stores and share talent when it strengthens partner growth and district capability.',mechanism:'Store talent snapshots, quarterly calibration, mentoring, cross-store experiences and DM visibility to retention themes.',action:'Surface emerging leaders, name bench gaps and match talent to development experiences beyond a single store when appropriate.',evidence:'District leaders can identify the strongest benches, weakest pipeline areas and the next actions needed.'}
+};
+function setPillar(key){const d=pillarData[key];['intent','mechanism','action','evidence'].forEach(id=>document.getElementById(id).textContent=d[id]);document.querySelectorAll('.pillar').forEach(x=>x.classList.toggle('active',x.dataset.key===key));}
+setPillar('pipeline');
+document.querySelectorAll('.pillar').forEach(b=>b.addEventListener('click',()=>setPillar(b.dataset.key)));
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.panel).classList.add('active');window.scrollTo({top:document.querySelector('.tabs').offsetTop-12,behavior:'smooth'});}));
+let editing=false;const editBtn=document.getElementById('editBtn');
+editBtn.addEventListener('click',()=>{editing=!editing;document.getElementById('app').classList.toggle('editing',editing);document.querySelectorAll('[data-editable="true"]').forEach(el=>el.contentEditable=editing?'true':'false');editBtn.textContent=editing?'Finish editing':'Edit text';editBtn.classList.toggle('active',editing);});
+document.getElementById('saveBtn').addEventListener('click',()=>{document.querySelectorAll('[data-editable="true"]').forEach(el=>el.removeAttribute('contenteditable'));const clone=document.documentElement.cloneNode(true);clone.querySelector('#app').classList.remove('editing');clone.querySelector('#editBtn').textContent='Edit text';clone.querySelector('#editBtn').classList.remove('active');const blob=new Blob(['<!DOCTYPE html>\n'+clone.outerHTML],{type:'text/html'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='D133_Talent_Strategy_Edited.html';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();if(editing)document.querySelectorAll('[data-editable="true"]').forEach(el=>el.contentEditable='true');},1000);});
+</script>
+</body>
+</html>
